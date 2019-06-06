@@ -1,61 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "$"; // ضع البريفكس الخاص بك هنا
-
-
-
-console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-console.log('         [Wait please .. ]       ')
-console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-client.on('ready', () => {
-	console.log('')
-	console.log('')
-	console.log('')
-	console.log('')
-	console.log('')
-	console.log('')
-	console.log('')
-	console.log('')
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log(`Logged in as [ ${client.user.tag}! ]`);
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log('[           BOT IS ONLINE         ]')
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log('[        info         ]')
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log(`Users! [ " ${client.users.size} " ]`);
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log(`channels! [ " ${client.channels.size} " ]`);
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-});
-
-
-client.on('message', message => {
-    let messageArray = message.content.split(" ");
-    
-    let command = messageArray[0];
-    
-    
-    if (command === `${prefix}helip`) {
-      message.channel.send(`**تم الارسال في الخاص**`);
-			let embed = new Discord.RichEmbed()
-                .setColor('RANDOM')
-                .addField('     **=-=-:: [ InFinty SERVER ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
-				.addField(`**${prefix}bc | رسالة جماعية لجميع الاعضاء**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bc1 | رسالة جماعية للاونلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bc2 | رسالة جماعية للوفلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bcrole | رسالة جماعية لرتبة معينه**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-                .addField('=-=- [ شكرا على استعمال البوت ] -=-= ' ,'╚[❖═════════════════════❖]╝')
-                .setFooter(`Va | NoHaxJustAbdou`)
-                .setTimestamp()
-			
-                message.author.sendEmbed(embed)
-	}
-});
-
-
  client.on("message", message => {//bc
 
             if (message.content.startsWith(prefix + "bc")) {
@@ -139,43 +84,6 @@ client.on('message' , message => {//bcrole
       message.channel.send(`**لقد تم ارسال هذه الرسالة الى ${message.guild.members.filter(m => m.roles.get(role.id)).size} عظو**`);
     }
 });
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 client.login(process.env.TOKEN); 
