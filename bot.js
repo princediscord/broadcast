@@ -314,9 +314,9 @@ client.on("reachLimit", (limit)=> {
 
 
 
-const gamestats = [`$bc`,`- Destu.`,`by | NoHaxJustAbdou`,`- Destu.`]
+const gamestats = [`Nitroooooooooooooo`,`- Destu.`,`by | NoHaxJustAbdou`,`- Destu.`]
 var index = 0
-var timer = 10 // الوقت بالثواني لتغير الستريمنق
+var timer = 2 // الوقت بالثواني لتغير الستريمنق
 client.on("ready", ()=> {
         setInterval(function(){
         client.user.setGame(`${gamestats[index]}`,'https://www.twitch.tv/ACMBOT') 
