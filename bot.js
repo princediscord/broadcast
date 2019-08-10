@@ -58,7 +58,7 @@ client.on('message', message => {
 
  client.on("message", message => {//bc
 
-            if (message.content.startsWith(prefix + "bc")) {
+            if (message.content.startsWith(prefix + "obc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -73,7 +73,7 @@ client.on('message', message => {
 
 client.on("message", message => {//bc1
 
-            if (message.content.startsWith(prefix + "bc1")) {
+            if (message.content.startsWith(prefix + "bc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -87,7 +87,7 @@ client.on("message", message => {//bc1
 
 client.on("message", message => {//bc2
 
-            if (message.content.startsWith(prefix + "bc2")) {
+            if (message.content.startsWith(prefix + "bcof")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -314,7 +314,7 @@ client.on("reachLimit", (limit)=> {
 
 
 
-const gamestats = [`Nitroooooooooooooo`,`Credit.`,`10 invite = Nitro`,`- Destu.`]
+const gamestats = [`Groza💚Dark`]
 var index = 0
 var timer = 2 // الوقت بالثواني لتغير الستريمنق
 client.on("ready", ()=> {
