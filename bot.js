@@ -87,7 +87,7 @@ client.on("message", message => {//bc1
 
 client.on("message", message => {//bc2
 
-            if (message.content.startsWith(prefix + "bcof")) {
+            if (message.content.startsWith(prefix + "ofbc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -314,7 +314,7 @@ client.on("reachLimit", (limit)=> {
 
 
 
-const gamestats = [`Groza💚Dark`]
+const gamestats = [`Tokyo`]
 var index = 0
 var timer = 2 // الوقت بالثواني لتغير الستريمنق
 client.on("ready", ()=> {
