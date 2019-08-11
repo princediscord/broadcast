@@ -314,33 +314,6 @@ client.on("reachLimit", (limit)=> {
 
 
 
-const gamestats = [`Tokyo`]
-var index = 0
-var timer = 2 // الوقت بالثواني لتغير الستريمنق
-client.on("ready", ()=> {
-        setInterval(function(){
-        client.user.setGame(`${gamestats[index]}`,'https://www.twitch.tv/ACMBOT') 
-        index++
-            if( index >= gamestats.length) index = 0 ;
-        }, timer*1000);
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
