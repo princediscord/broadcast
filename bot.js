@@ -44,7 +44,7 @@ client.on('message', message => {
                 .setColor('RANDOM')
                 .addField('     **=-=-:: [ PANDA SERVER ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
 				.addField(`**${prefix}bc | رسالة جماعية لجميع الاعضاء**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bc1 | رسالة جماعية للاونلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+				.addField(`**${prefix}onbc | رسالة جماعية للاونلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bc2 | رسالة جماعية للوفلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcrole | رسالة جماعية لرتبة معينه**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
                 .addField('=-=- [ شكرا على استعمال البوت ] -=-= ' ,'╚[❖═════════════════════❖]╝')
@@ -58,7 +58,7 @@ client.on('message', message => {
 
  client.on("message", message => {//bc
 
-            if (message.content.startsWith(prefix + "obc")) {
+            if (message.content.startsWith(prefix + "bc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -73,7 +73,7 @@ client.on('message', message => {
 
 client.on("message", message => {//bc1
 
-            if (message.content.startsWith(prefix + "bc")) {
+            if (message.content.startsWith(prefix + "obc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
